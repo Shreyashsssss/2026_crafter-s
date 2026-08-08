@@ -238,6 +238,20 @@ The output is advisory only.
 
 ---
 
+## 🏆 Judging Criteria Alignment
+
+NyayaAI is engineered specifically to address key hackathon evaluation criteria:
+
+| Criterion | Alignment & Implementation |
+| --- | --- |
+| **1. Innovation & Problem Impact** | Targets judicial backlog and document analysis fatigue in Indian court systems using structured, multi-agent AI workflows instead of simple Q&A bots. |
+| **2. Technical Complexity & Architecture** | Features a 6-agent orchestrated pipeline (Document Review, Evidence Analysis, Timeline Generation, Legal Research, Argument Comparison, and Advisory Synthesis). |
+| **3. Explainability & Trust** | Every recommendation is backed by extracted evidence citations, chronological timelines, and explicit confidence/contradiction flags. |
+| **4. Human-in-the-Loop & Safety** | Built strictly as a human-assisted advisory co-pilot—never an automated decision maker. Preserves final authority with judges and legal professionals. |
+| **5. UI/UX & Production Readiness** | High-performance Next.js 16 (Turbopack) frontend with TypeScript type safety, custom glassmorphism design system, and responsive layout. |
+
+---
+
 ## Getting Started
 
 1. Install dependencies:
