@@ -1,4 +1,4 @@
-import { ArrowRight, BookOpen, Clock3, FileText, ShieldCheck, Sparkles, Team, Users } from 'lucide-react';
+import { ArrowRight, BookOpen, Clock3, FileText, ShieldCheck, Sparkles, UserCheck, Users } from 'lucide-react';
 
 const features = [
   {
@@ -29,7 +29,7 @@ const features = [
   {
     title: 'Recommendation Agent',
     description: 'Generate an explainable advisory case assessment with traceable reasoning.',
-    icon: Team,
+    icon: UserCheck,
   },
 ];
 
