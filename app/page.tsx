@@ -1,4 +1,5 @@
-import { ArrowRight, BookOpen, Clock3, FileText, ShieldCheck, Sparkles, UserCheck, Users } from 'lucide-react';
+import Link from 'next/link';
+import { ArrowRight, BookOpen, Clock3, FileText, ShieldCheck, Sparkles, UserCheck, Users, Shield } from 'lucide-react';
 
 const features = [
   {
@@ -43,11 +44,30 @@ const stats = [
 export default function Home() {
   return (
     <main className="min-h-screen bg-nyaya-dark text-white">
-      <div className="relative overflow-hidden bg-nyaya-deep px-6 py-10 sm:px-10 lg:px-16">
+      <div className="relative overflow-hidden bg-nyaya-deep px-6 py-8 sm:px-10 lg:px-16">
         <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 transform-gpu overflow-hidden blur-3xl">
           <div className="relative left-1/2 aspect-[1155/678] w-[68.5625rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-r from-[#5f87ff]/40 via-[#a96bff]/30 to-[#3ed8c1]/10 opacity-70" />
         </div>
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-7xl space-y-12">
+          {/* Top Navbar */}
+          <nav className="flex items-center justify-between border-b border-white/10 pb-6">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-nyaya-blue/20 text-nyaya-blue ring-1 ring-nyaya-blue/30 font-bold">
+                ⚖️
+              </div>
+              <span className="text-xl font-bold tracking-tight text-white">NyayaAI</span>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <Link
+                href="/admin"
+                className="flex items-center gap-2 rounded-2xl bg-gradient-to-r from-nyaya-blue to-nyaya-purple px-5 py-2.5 text-xs font-bold text-slate-950 transition hover:opacity-90 shadow-lg shadow-nyaya-blue/20"
+              >
+                <Shield className="h-4 w-4 text-slate-950" />
+                Head of Admin Portal
+              </Link>
+            </div>
+          </nav>
           <div className="grid gap-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <section className="space-y-8">
               <div className="space-y-4">
